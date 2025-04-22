@@ -1,13 +1,239 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Iniciando no git</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Portifólio</title>
   </head>
   <body>
-    <h1>ola mundo do github sou eu</h1>
-    <script src="js/index.js"></script>
+    <header class="header">
+      <a href="#home" class="logo">Paulo <span>Modesto</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projeto">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h2>Olá, eu sou</h2>
+        <h3>Paulo Modesto</h3>
+        <p>
+          Estudante de Análise e Desenvolvimento de Sistemas, com conhecimento
+          básico em NodeJs, Express, MongoDB, MySQL, HTML, CSS, JavaScript, Git,
+          GitHub, Windows, conhecimento em desenvolvimento de API, REST, CRUD e
+          MVC.Estou em busca de uma oportunidade para desenvolver e aprimorar
+          meus conhecimentos.
+        </p>
+        <div class="social-icons">
+          <a href="https://github.com/PauloMd30" title="GitHub"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/paulo-modesto-silva"
+            title="LinkedIn"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+
+          <a class="whatsapp-link" title="WhatsApp"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </div>
+        <div class="btn-group">
+          <a href="#contato" class="btn">Entre em Contato</a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="image/foto.png" alt="" />
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="sobre-img">
+        <img src="image/foto.png" alt="" class="imagem-mobile-hide" />
+      </div>
+      <div class="sobre-content">
+        <h2>Sobre <span>Mim</span></h2>
+        <h3>Desenvolvedor <span>Backend</span></h3>
+        <p>
+          Sou Paulo Modesto da Silva, tenho 30 anos, moro em Carapicuíba (SP) e
+          atualmente estou em transição de carreira para a área de tecnologia,
+          estudo Análise e Desenvolvimento de Sistemas. Busco uma oportunidade
+          como desenvolvedor backend júnior, onde eu possa colocar em prática o
+          que venho estudando e continuar evoluindo como profissional. Sou uma
+          pessoa tranquila, paciente, comprometida e com grande interesse em
+          aprender com os desafios do dia a dia. Acredito no poder da tecnologia
+          para transformar vidas e processos. Me motiva saber que posso criar
+          soluções que tornem o dia a dia das pessoas mais fácil e eficiente.
+        </p>
+        <a href="#projeto" class="btn">Meus Projetos</a>
+      </div>
+    </section>
+
+    <section class="projeto" id="projeto">
+      <h2 class="heading">Meus Projetos</h2>
+
+      <div class="projetos-container">
+        <div class="projeto-box">
+          <div class="projeto-infor">
+            <h4>Gestão de Produtos</h4>
+
+            <p>
+              Esta aplicação foi desenvolvida com Python (Flask) e tem como
+              objetivo gerenciar produtos com base em sua validade, oferecendo
+              funcionalidades automatizadas de controle e notificação.
+              <br />
+              Funcionalidades principais: Cadastro, edição, listagem e exclusão
+              de produtos com campos como nome, marca, código de barras e data
+              de validade. Interface web integrada usando templates Jinja2 para
+              interação com o sistema. Validação automática de datas no backend
+              para garantir integridade dos dados. Consulta de produtos com
+              validade próxima (até 7 dias) para facilitar o controle de
+              estoque. Exclusão automática de produtos vencidos com verificações
+              diárias agendadas (via APScheduler).
+            </p>
+            <a
+              href="https://gestao-de-produtos.onrender.com/"
+              class="projeto-link"
+            >
+              Acesse o Projeto</a
+            >
+          </div>
+        </div>
+
+        <div class="projeto-box">
+          <div class="projeto-infor">
+            <h4>Portal de Notícias</h4>
+            <p>
+              Desenvolvi uma aplicação web completa para gerenciamento de
+              notícias, utilizando Node.js, Express, MySQL e template engine
+              (como EJS). A solução permite exibir, cadastrar e validar notícias
+              por meio de um painel administrativo, oferecendo uma experiência
+              eficiente tanto para usuários quanto para administradores.
+              Principais funcionalidades: Listagem dinâmica de notícias com
+              ordenação por data; Exibição de notícia individual com base no ID
+              via query string; Validação de formulário com Express Validator,
+              garantindo integridade dos dados; Persistência de dados em banco
+              de dados MySQL utilizando DAO (Data Access Object); Tratamento de
+              erros e feedbacks ao usuário, com renderização de views
+              personalizadas; Arquitetura modular, com separação clara entre
+              controladores, modelos e rotas. Destaques técnicos: Uso assíncrono
+              com async/await para garantir performance e legibilidade;
+              Implementação do padrão DAO para encapsular a lógica de acesso a
+              dados; Validações server-side robustas para garantir qualidade dos
+              dados inseridos; Integração com views dinâmicas (como EJS/Pug)
+              para renderização fluida no front-end.
+            </p>
+            <a
+              href="https://github.com/PauloMd30/portal_noticias"
+              class="projeto-link"
+            >
+              Repositório do Git</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <h2 class="heading">Contrate <span>Me</span></h2>
+
+      <form
+        class="contact-form"
+        action="https://formsubmit.co/paulosilvarl17@gmail.com"
+        method="POST"
+      >
+        <fieldset class="input-group">
+          <div class="input-box">
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Nome"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <span class="error-message" id="email-error"></span>
+          </div>
+
+          <div class="input-box">
+            <label for="telefone">Número do Telefone</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              placeholder="Número do Telefone"
+            />
+            <span class="error-message" id="telefone-error"></span>
+
+            <label for="assunto">Assunto</label>
+            <input
+              type="text"
+              id="assunto"
+              name="assunto"
+              placeholder="Assunto"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset class="input-group-2">
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            cols="30"
+            rows="10"
+            placeholder="Mensagem"
+            required
+          ></textarea>
+
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/Obrigado.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <button type="submit" class="btn">Enviar</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://github.com/PauloMd30" title="GitHub"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/paulo-modesto-silva"
+          title="LinkedIn"
+          ><i class="bx bxl-linkedin"></i>
+        </a>
+        <a class="whatsapp-link" title="WhatsApp"
+          ><i class="bx bxl-whatsapp"></i
+        ></a>
+      </div>
+
+      <p class="copyright">
+        &copy; 2025 Paulo Modesto | Todos os Direitos Reservados
+      </p>
+    </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>
