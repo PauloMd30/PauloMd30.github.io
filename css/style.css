@@ -480,4 +480,7 @@ label {
     font-size: 1.4rem;
     line-height: 1.7;
   }
+  .projeto-infor {
+    padding: 2rem 1.5rem;
+  }
 }
